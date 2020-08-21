@@ -43,8 +43,6 @@ T = theta([2:end]);
 
 L = lambda/2/m*(T'*T);
 
-%J =  1 / m * (-y'*log10(h)-(1-y')*log10(h)) + L;
-
 J = 1/m*(-y'*log(h) - (1-y)'*log(1-h)) + L;
 
 grad = X'*(h-y);
